@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v9TwoDv7dKcoblp7tCsQKfQD392B+Pex0dvh7Xt5ZpgA9Wd/fsNm5qC9VTSIEmn8AoUtfuRmHSmOicUoeVOTdw==",
+  "dgSpecHash": "X9PF3ksZSPGFPz7JSk8q1SOPZDeZTUsep6Ge2dyEl5KcQHRaffcmz582d/wvECvGRMERlVzAu7eiy3COopN4dA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj",
+  "projectFilePath": "C:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Scott\\.nuget\\packages\\dbup-core\\4.2.0\\dbup-core.4.2.0.nupkg.sha512",
     "C:\\Users\\Scott\\.nuget\\packages\\dbup-sqlserver\\4.2.0\\dbup-sqlserver.4.2.0.nupkg.sha512",

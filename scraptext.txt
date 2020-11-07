@@ -1,0 +1,1 @@
+dotnet .\DatabaseMigration.dll --db-name "TestDB" --server-instance "localhost\SQLExpress" --migrate --ensure-database

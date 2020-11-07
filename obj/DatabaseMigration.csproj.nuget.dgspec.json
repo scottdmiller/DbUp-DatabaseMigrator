@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj": {}
+    "C:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj": {
+    "C:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj",
+        "projectUniqueName": "C:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj",
         "projectName": "DatabaseMigration",
-        "projectPath": "c:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj",
+        "projectPath": "C:\\Users\\Scott\\source\\repos\\DatabaseMigration\\DatabaseMigration.csproj",
         "packagesPath": "C:\\Users\\Scott\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Scott\\source\\repos\\DatabaseMigration\\obj\\",
+        "outputPath": "C:\\Users\\Scott\\source\\repos\\DatabaseMigration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Scott\\AppData\\Roaming\\NuGet\\NuGet.Config",
