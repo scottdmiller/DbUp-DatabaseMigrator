@@ -74,6 +74,7 @@ namespace Indy.DatabaseMigration
 
             var upgradeEngineBuilder = DeployChanges.To
                 .SqlDatabase(connectionString, null) //null or "" for default schema for user
+                .JournalToSqlTable("dbup", "Migrations")
                 .LogToConsole();
 
             addScripts(upgradeEngineBuilder);
