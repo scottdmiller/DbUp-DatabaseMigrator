@@ -29,7 +29,7 @@ class Program
         var scriptsPath = args[4];
 
         //build and set SqlConnection String variable
-        if (string.IsNullOrWhiteSpace(database) || string.IsNullOrWhiteSpace(serverInstance))
+       if (string.IsNullOrWhiteSpace(database) || string.IsNullOrWhiteSpace(serverInstance))
         {
             throw new ArgumentException("Must supply database and serverInstance");
         }
@@ -64,16 +64,16 @@ class Program
                 .LogToConsole()
                 .JournalTo(new NullJournal())
                 .Build();
-
+ 
         var preDeploymentUpgradeResult = preDeploymentScriptsExecutor.PerformUpgrade();
-
+ 
         if (!preDeploymentUpgradeResult.Successful)
         {
             return ReturnError(preDeploymentUpgradeResult.Error.ToString());
         }
-
+ 
         ShowSuccess();
-
+ 
         Console.WriteLine("Start executing migration scripts...");
         var migrationScriptsPath = Path.Combine(scriptsPath, "Migrations");
         var upgrader =
@@ -86,16 +86,16 @@ class Program
                 .LogToConsole()
                 .JournalToSqlTable("app", "MigrationsJournal")
                 .Build();
-
+ 
         var result = upgrader.PerformUpgrade();
-
+ 
         if (!result.Successful)
         {
             return ReturnError(result.Error.ToString());
         }
-
+ 
         ShowSuccess();
-
+ 
         Console.WriteLine("Start executing postdeployment scripts...");
         string postdeploymentScriptsPath = Path.Combine(scriptsPath, "PostDeployment");
         var postDeploymentScriptsExecutor =
@@ -108,26 +108,26 @@ class Program
                 .LogToConsole()
                 .JournalTo(new NullJournal())
                 .Build();
-
+ 
         var postdeploymentUpgradeResult = postDeploymentScriptsExecutor.PerformUpgrade();
-
+ 
         if (!postdeploymentUpgradeResult.Successful)
         {
             return ReturnError(result.Error.ToString());
         }
-
+ 
         ShowSuccess();
-
+ 
         return 0;
     }
-
+ 
     private static void ShowSuccess()
     {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Success!");
         Console.ResetColor();
     }
-
+ 
     private static int ReturnError(string error)
     {
         Console.ForegroundColor = ConsoleColor.Red;

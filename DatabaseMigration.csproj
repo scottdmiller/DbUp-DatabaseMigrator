@@ -12,7 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="DBMigator_Test.cs.txt" />
     <None Remove="scripts\003_20201106_Alter.dbo.FakeTable.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="DBMigator_Test.cs.txt" />
   </ItemGroup>
 
 
@@ -20,6 +25,13 @@
     <PackageReference Include="dbup-core" Version="4.2.0" />
     <PackageReference Include="dbup-sqlserver" Version="4.2.0" />
     <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.19405.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="PostDeployment\" />
+    <Folder Include="PreDeployment\" />
   </ItemGroup>
 
 </Project>
