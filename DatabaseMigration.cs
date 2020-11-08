@@ -1,4 +1,5 @@
 ﻿using System;
+using System;
 using System.Data.SqlClient;
 using System.IO;
 using System.Reflection;
@@ -13,8 +14,10 @@ namespace Indy.DatabaseMigration
     /// <summary>
     /// Class for reusable DbUp database migration with embedded resource files
     /// </summary>
-    public static class DatabaseMigration
+    /// 
+      public static class DatabaseMigration
     {
+        
         private static bool MigrateDatabase(
             Action<UpgradeEngineBuilder> addScripts,
             string serverInstance,
@@ -171,11 +174,17 @@ namespace Indy.DatabaseMigration
             {
                 if (migrate)
                 {
+
+                    //var ScriptDirPath = Environment.CurrentDirectory;
+                    //ScriptDirPath = ScriptDirPath + "\\scripts";
+                    //Console.WriteLine(ScriptDirPath);
+                    //upgradeEngineBuilder.WithScriptsFromFileSystem(ScriptDirPath);
+
                     upgradeEngineBuilder.WithScriptsEmbeddedInAssembly(
                         Assembly.GetEntryAssembly(),
                         script => script.StartsWith(scriptPrefix),
                         new SqlScriptOptions() { ScriptType = ScriptType.RunOnce, RunGroupOrder = 0 });
-                }
+        }
 
                 if (testData)
                 {

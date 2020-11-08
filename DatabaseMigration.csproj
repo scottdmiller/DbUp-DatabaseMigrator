@@ -11,6 +11,10 @@
     <EmbeddedResource Include="testdata\*.sql" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="scripts\003_20201106_Alter.dbo.FakeTable.sql" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="dbup-core" Version="4.2.0" />
