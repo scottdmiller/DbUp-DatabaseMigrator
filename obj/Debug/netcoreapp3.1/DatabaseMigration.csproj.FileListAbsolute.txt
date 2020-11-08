@@ -1,3 +1,6 @@
+C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.AssemblyInfoInputs.cache
+C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.AssemblyInfo.cs
+C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.csproj.CoreCompileInputs.cache
 C:\Users\Scott\source\repos\DatabaseMigration\bin\Debug\netcoreapp3.1\DatabaseMigration.exe
 C:\Users\Scott\source\repos\DatabaseMigration\bin\Debug\netcoreapp3.1\DatabaseMigration.deps.json
 C:\Users\Scott\source\repos\DatabaseMigration\bin\Debug\netcoreapp3.1\DatabaseMigration.runtimeconfig.json
@@ -16,10 +19,6 @@ C:\Users\Scott\source\repos\DatabaseMigration\bin\Debug\netcoreapp3.1\runtimes\w
 C:\Users\Scott\source\repos\DatabaseMigration\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Scott\source\repos\DatabaseMigration\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 C:\Users\Scott\source\repos\DatabaseMigration\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
-C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.csprojAssemblyReference.cache
-C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.AssemblyInfoInputs.cache
-C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.AssemblyInfo.cs
-C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.csproj.CoreCompileInputs.cache
 C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.csproj.CopyComplete
 C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.dll
 C:\Users\Scott\source\repos\DatabaseMigration\obj\Debug\netcoreapp3.1\DatabaseMigration.xml
