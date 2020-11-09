@@ -13,20 +13,26 @@ using DbUp.Support;
 
 class Program
 {
-    static int Main(string[] args)
-    {
-        if (args.Length != 2)
-        {
-            return ReturnError(
-                "Invalid args. You have to specify connection string and scripts path");
-        }
+    /// <param name="serverInstance">The SQL Server/Instance.</param>
+    /// <param name="database">Name of database to create or migrate</param>
+    /// <param name="user">Username for non-integrated auth, must also supply password</param>
+    /// <param name="password">Password for non-integrated auth</param>
+    /// <param name="scriptsPath">Server path to sql scripts directory.</param>
 
+    public static int Main (
+        string serverInstance,
+        string database,
+        string user = "",
+        string password = "",
+        string scriptsPath
+      )
+    { 
         //var connectionString = args[0];
-        var serverInstance = args[0];
-        var database = args[1];
-        string user = args[2];
-        string password = args[3];
-        var scriptsPath = args[4];
+        //var serverInstance = args[0];
+        //var database = args[1];
+        //string user = args[2];
+        //string password = args[3];
+        //var scriptsPath = args[4];
 
         //build and set SqlConnection String variable
         if (string.IsNullOrWhiteSpace(database) || string.IsNullOrWhiteSpace(serverInstance))
@@ -84,7 +90,7 @@ class Program
                     IncludeSubDirectories = true
                 })
                 .LogToConsole()
-                .JournalToSqlTable("app", "MigrationsJournal")
+                .JournalToSqlTable("dbup", "Migrations")
                 .Build();
 
         var result = upgrader.PerformUpgrade();
