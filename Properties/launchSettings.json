@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "DatabaseMigration": {
-      "commandName": "Project",
-      "commandLineArgs": "--server-instance \"AUDIOSLAVE\\DEV\" --database \"TestDB\" --scripts-path \" \" "
-    }
-  }
-}
