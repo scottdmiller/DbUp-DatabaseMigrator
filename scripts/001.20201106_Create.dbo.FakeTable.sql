@@ -1,0 +1,12 @@
+IF OBJECT_ID('dbo.FakeTable') IS NOT NULL
+BEGIN
+    DROP TABLE dbo.FakeTable;
+END
+GO
+
+CREATE TABLE dbo.FakeTable
+(
+    Id INT IDENTITY(1,1) NOT NULL,
+    FakeCol1 VARCHAR(10) NOT NULL,
+    FakeCol2 INT NOT NULL
+)

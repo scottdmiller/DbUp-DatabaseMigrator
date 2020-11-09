@@ -12,7 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="scripts\003_20201106_Alter.dbo.FakeTable.sql" />
+    <None Remove="Migrations\001.20201106_Create.dbo.FakeTable.sql" />
+    <None Remove="scripts\003.20201106_Alter.dbo.FakeTable.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\001.20201106_Create.dbo.FakeTable.sql" />
   </ItemGroup>
 
 
@@ -24,7 +29,6 @@
 
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
     <Folder Include="PostDeployment\" />
     <Folder Include="PreDeployment\" />
   </ItemGroup>
